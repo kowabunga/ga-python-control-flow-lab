@@ -35,11 +35,6 @@ day = int(input("Enter the day of the month > "))
 
 while day > 31 or day < 1:
     day = int(input("Months have at least one day and 31 days at most. Please put in a correct date. > "))
-# 3. Calculate what season it is based upon this chart:
-#      Dec 21 - Mar 19: Winter
-#      Mar 20 - Jun 20: Spring
-#      Jun 21 - Sep 21: Summer
-#      Sep 22 - Dec 20: Fall
 
 # Check if in WINTER
 if (month == "jan" or month == "feb") or (month == "dec" and day >= 21) or (month == "mar" and day <= 19):
