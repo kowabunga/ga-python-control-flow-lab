@@ -11,13 +11,11 @@
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
 
-vowels = ["a", "e", "i", "o", "u"]
+vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
 
-while True:
-    user_input = input('Enter a single character. Type ".quit" to quit. > ').lower()
-    if user_input == ".quit":
-        break
-    if user_input in vowels:
-        print(f"The letter {user_input} is a vowel")
-    elif user_input:
-        print(f"The letter {user_input} is a consonant")
+user_input = input("Enter a single character. > ")
+
+if user_input in vowels:
+    print(f"The letter {user_input} is a vowel")
+elif user_input:
+    print(f"The letter {user_input} is a consonant")
